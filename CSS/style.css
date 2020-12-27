@@ -145,7 +145,7 @@ header {
 }
 
 .projects {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
@@ -169,12 +169,13 @@ header {
 }
 .projects__item-content {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
+  transform: translate(-50%);
   opacity: 0;
 }
 .projects__title {
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   color: #ffffff;
   font-family: Raleway;
   font-size: 14px;
@@ -189,6 +190,100 @@ header {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+}
+
+.review {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+}
+.review__wrapper-img img {
+  max-width: 100%;
+  height: auto;
+}
+.review__wrapper-card {
+  background-color: #53354a;
+}
+.review__item-content {
+  color: #ffffff;
+  font-family: Cardo;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 42px;
+  text-align: left;
+}
+
+.team {
+  width: 100%;
+}
+.team__wrapper {
+  margin: 101px 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  grid-column-gap: 30px;
+}
+
+.team__item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team__item-img {
+  margin-bottom: 30px;
+}
+.team__item-img img {
+  max-width: 100%;
+  height: auto;
+}
+.team__item-title {
+  color: #2d3033;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+.team__item-text {
+  padding-top: 16px;
+  padding-bottom: 29px;
+  color: #e84545;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.team__item-content {
+  color: #6c7279;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: left;
+}
+.team__item-social {
+  margin-top: 31px;
+  display: flex;
+  justify-content: start;
+}
+
+.social__card {
+  display: flex;
+  justify-content: center;
+  margin-right: 4px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+}
+.social__card-img {
+  margin: auto;
+}
+.social__card:hover {
+  background-color: #e4eaec;
 }
 
 /*# sourceMappingURL=style.css.map */

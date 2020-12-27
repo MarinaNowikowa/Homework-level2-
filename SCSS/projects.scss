@@ -1,5 +1,5 @@
 .projects {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
@@ -22,18 +22,17 @@
     max-width: 100%;
     height: auto;
   }
-  &__img img {
-    // transition: opacity 0.1s linear;
-  }
+
   &__item-content {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
+    transform: translate(-50%);
     opacity: 0;
   }
 
   &__title {
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     color: #ffffff;
     font-family: Raleway;
     font-size: 14px;

@@ -34,7 +34,7 @@ header {
 
   &__nav-link {
     text-align: right;
-    color: $top-color;
+    color: white;
     text-decoration: none;
     opacity: 0.75;
     font-family: Raleway;
@@ -51,9 +51,8 @@ header {
     margin: auto;
     margin-top: 156px;
     margin-bottom: 41px;
-    display: block;
     max-width: 861px;
-    color: $top-color;
+    color: white;
     font-family: "Open Sans";
     font-size: 63px;
     line-height: 71px;
@@ -65,7 +64,7 @@ header {
     margin: auto;
     display: block;
     max-width: 912px;
-    color: $top-color;
+    color: white;
     font-family: Raleway;
     font-size: 23px;
     font-weight: 400;
@@ -74,15 +73,17 @@ header {
   }
 
   &-btn {
-    margin: auto;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
     margin-top: 77px;
     margin-bottom: 156px;
     max-width: 200px;
-    display: block;
     padding: 18px 49px;
     border-radius: 3px;
     background-color: #e84545;
-    color: $top-color;
+    color: white;
     font-family: "Raleway - Semi Bold";
     font-size: 13px;
     font-weight: 400;

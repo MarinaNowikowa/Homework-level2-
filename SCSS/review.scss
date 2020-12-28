@@ -1,17 +1,17 @@
 .review {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
 
   &__img {
     width: 50vw;
+    object-fit: cover;
   }
 
   &__img img {
     max-width: 100%;
     height: auto;
-    object-fit: fill;
   }
 
   &__card {
@@ -48,6 +48,9 @@
   }
 }
 
+.slick-track {
+  width: 50%;
+}
 .slick-dots {
   display: flex;
   justify-content: center;

@@ -1,23 +1,18 @@
 .review {
-  width: 100vw;
+  max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
 
-  &__img {
-    width: 50vw;
+  &__img-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
-  &__img img {
-    max-width: 100%;
-    height: auto;
-  }
-
   &__card {
-    width: 50vw;
-
     background-color: #53354a;
+    display: grid !important;
   }
 
   &__item {
@@ -26,9 +21,12 @@
     margin-top: 105px;
   }
 
+  &__item.slick-slide {
+    outline: none;
+  }
   &__item-content {
     display: block;
-    width: 500px;
+    max-width: 500px;
     color: #ffffff;
     font-family: Cardo;
     font-size: 36px;
@@ -38,6 +36,7 @@
   }
 
   &__item-text {
+    max-width: 500px;
     padding-top: 25px;
     font-family: Raleway;
     font-size: 13px;
@@ -48,9 +47,6 @@
   }
 }
 
-.slick-track {
-  width: 50%;
-}
 .slick-dots {
   display: flex;
   justify-content: center;

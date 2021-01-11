@@ -198,7 +198,7 @@ footer {
 header {
   grid-area: header;
   width: 100%;
-  background: url(/CSS/images/Header_fon.png) center;
+  background: url(/images/Header_fon.png) center;
 }
 
 .header__wrapper {
@@ -386,7 +386,7 @@ header {
 .slick-dots button {
   margin-right: 3px;
   width: 13px;
-  height: 13px;
+  height: 15px;
   opacity: 0.2;
   background-color: #ffffff;
   border-radius: 100%;
@@ -498,7 +498,6 @@ header {
   }
 
   .header {
-    margin-top: 110px;
     font-size: 50px;
     line-height: 62px;
   }
